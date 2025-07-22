@@ -1,0 +1,14 @@
+Specs of Testing
+----------------
+
+- descriptions of features
+
+- individual tests with a description
+
+- run code
+
+- expectations
+
+- tests be passed into feature descriptions
+
+- code and expectations be passed into tests
