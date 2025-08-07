@@ -50,6 +50,4 @@ def removeRichStyling(text: str) -> str:
     return "".join([l[0] for l in [text.split("[") for text in text.split("]")]])
 
 def centerStr(text: str, width: int, styled: bool = False) -> str:
-    if styled:
-        text = removeRichStyling(text)
-    return "\n".join([f"{" "*((width - len(ln)) // 2)}{ln}{" "*((width - len(ln)) // 2)}" for ln in text.split("\n")])
+    return "\n".join([f"{" "*((width - len(removeRichStyling(ln) if styled else ln)) // 2)}{ln}{" "*((width - len(removeRichStyling(ln) if styled else ln)) // 2)}" for ln in text.split("\n")])
