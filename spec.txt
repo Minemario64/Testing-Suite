@@ -2,8 +2,10 @@ Specs of Testing
 ----------------
 
 - descriptions of features
+    - if at least a single test fails, the feature will fail
 
 - individual tests with a description
+    - if at least a single test case fails, the test will fail
 
 - run code
 
@@ -12,3 +14,5 @@ Specs of Testing
 - tests be passed into feature descriptions
 
 - code and expectations be passed into tests
+
+- pretty print the results

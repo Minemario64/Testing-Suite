@@ -1,3 +1,5 @@
+from math import ceil
+
 NON_EDGE: int = 0
 CORNER: int = 1
 EDGE_X: int = 2
@@ -50,4 +52,4 @@ def removeRichStyling(text: str) -> str:
     return "".join([l[0] for l in [text.split("[") for text in text.split("]")]])
 
 def centerStr(text: str, width: int, styled: bool = False) -> str:
-    return "\n".join([f"{" "*((width - len(removeRichStyling(ln) if styled else ln)) // 2)}{ln}{" "*((width - len(removeRichStyling(ln) if styled else ln)) // 2)}" for ln in text.split("\n")])
+    return "\n".join([f"{" "*((width - len(removeRichStyling(ln) if styled else ln)) // 2)}{ln}{" "*(ceil((width - len(removeRichStyling(ln) if styled else ln)) / 2))}" for ln in text.split("\n")])
