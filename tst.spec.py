@@ -1,5 +1,5 @@
 from tst import Hi
-import __init__ as tester
+import tester
 
 tester.GLOBALS |= globals()
 tester.describe("Says Hi", '''
