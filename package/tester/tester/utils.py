@@ -35,4 +35,8 @@ def traverseFuncStr(text: str, start: int = 0) -> str:
     return '""'
 
 def clear() -> None:
-    os.system("powershell clear")
+    if os.name == "nt":
+        os.system("powershell clear")
+
+    else:
+        os.system("clear")
