@@ -1,0 +1,9 @@
+setup.py
+tester/__init__.py
+tester/draw.py
+tester/utils.py
+tester.egg-info/PKG-INFO
+tester.egg-info/SOURCES.txt
+tester.egg-info/dependency_links.txt
+tester.egg-info/requires.txt
+tester.egg-info/top_level.txt
